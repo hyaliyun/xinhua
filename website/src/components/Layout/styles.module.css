@@ -1,0 +1,75 @@
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.player {
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  padding: 20px;
+}
+buttonContainer {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.primaryButton {
+  background-color: #3A6D8C;  /* Replace with your desired color */
+  color: #ffffff;  /* Replace with your desired text color */
+  border: none;
+  padding: 10px 24px;
+  border-radius: 99rem;
+  font-weight: bold;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+}
+
+.primaryButton:hover {
+  color: #ffffff;  /* Replace with your desired text color */
+  background-color: #6A9AB0;  /* Replace with your hover color */
+}
+
+.secondaryButton {
+  border: none;
+  padding: 10px 24px;
+  border-radius: 99rem;
+  font-weight: bold;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  color: #333;  /* Replace with your desired text color */
+  border: 1px solid #ddd;  /* Replace with your desired border color */
+  background-color: #f8f9fa;  /* Replace with your desired background color */
+}
+
+.secondaryButton:hover {
+  background-color: #e2e6ea;  /* Replace with your hover color */
+  color: #333;  /* Replace with your desired text color */
+}
+
+@media (max-width: 600px) {
+  .largeFormatDevices {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .content {
+    top: 50px;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    width: calc(100% - 2rem);
+  }
+}

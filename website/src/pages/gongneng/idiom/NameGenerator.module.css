@@ -1,0 +1,136 @@
+.jx-block {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .jx-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 26px;
+    margin-bottom: 1rem;
+  }
+  
+  .jx-button {
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    font-size: 26px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0.5rem;
+  }
+  
+  .jx-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .jx-block #_result {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 1rem;
+  }
+  
+  .radio-group {
+    margin: 1rem 0;
+  }
+  
+  .radio-group label {
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+  }
+  
+  .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  
+  .topBanner {
+    font-size: 20px;
+    padding: 30px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .topBannerTitle {
+    font-size: 54px;
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .topBannerTitle {
+      font-size: 40px;
+    }
+  }
+  
+  .topBannerTitleText {
+    background: linear-gradient(
+      90deg,
+      rgb(131 58 180 / 100%) 0%,
+      rgb(253 29 29 / 100%) 50%,
+      rgb(252 176 69 / 100%) 100%
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .topBannerTitleText:hover {
+    border-bottom: solid 2px;
+    border-color: rgb(152 0 255);
+  }
+  
+  html[data-theme='dark'] .topBannerTitleText {
+    background: linear-gradient(
+      90deg,
+      rgb(152 0 255) 0%,
+      rgb(246 41 41) 50%,
+      rgb(255 169 8) 100%
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .topBannerDescription {
+    font-size: 20px;
+  }
+  @media only screen and (max-width: 768px) {
+    .topBannerDescription {
+      font-size: 16px;
+      white-space: normal;
+    }
+  }
+  
+  
+  
+  @keyframes jack-in-the-box {
+    0% {
+      opacity: 0;
+      transform: scale(0.1) rotate(30deg);
+      transform-origin: center bottom;
+    }
+  
+    50% {
+      transform: rotate(-10deg);
+    }
+  
+    70% {
+      transform: rotate(3deg);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }

@@ -1,0 +1,209 @@
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+/* styles.module.css */
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  position: relative;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+  color: #FF9494;
+  border-bottom: 2px solid #FFD1D1;
+  padding-bottom: 10px;
+  margin-top: 0;
+  text-align: center;
+}
+
+.card .paragraphs {
+  margin-top: 10px;
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.card .paragraphs p {
+  margin-bottom: 10px;
+}
+
+.card .author {
+  font-style: italic;
+  color: #8c4510;
+  text-align: right;
+  margin-top: 10px;
+}
+
+.seal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: #c14e1e;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Noto Serif SC', serif;
+  font-weight: bold;
+  color: #fff;
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .cardContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cardContainer {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+/* Style for the "See More" button */
+.loadMoreButton {
+  background-color: #f794a4;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+  /* Center the button */
+  position: absolute; /* Float the button */
+  left: 50%;          /* Horizontally center */
+  transform: translateX(-50%); /* Adjust centering */
+  bottom: 20px;       /* Adjust the vertical position (floating near the bottom) */
+}
+
+.loadMoreButton:hover {
+  background-color: #f06576;
+}
+
+/* Make sure the parent container allows absolute positioning */
+.section {
+  position: relative; /* Parent container for button */
+  padding-bottom: 100px; /* Add some bottom padding to prevent overlapping content */
+}
+
+
+
+.topBanner {
+  font-size: 20px;
+  padding: 30px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topBannerTitle {
+  font-size: 54px;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .topBannerTitle {
+    font-size: 40px;
+  }
+}
+
+.topBannerTitleText {
+  background: linear-gradient(
+    90deg,
+    rgb(131 58 180 / 100%) 0%,
+    rgb(253 29 29 / 100%) 50%,
+    rgb(252 176 69 / 100%) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.topBannerTitleText:hover {
+  border-bottom: solid 2px;
+  border-color: rgb(152 0 255);
+}
+
+html[data-theme='dark'] .topBannerTitleText {
+  background: linear-gradient(
+    90deg,
+    rgb(152 0 255) 0%,
+    rgb(246 41 41) 50%,
+    rgb(255 169 8) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.topBannerDescription {
+  font-size: 20px;
+}
+@media only screen and (max-width: 768px) {
+  .topBannerDescription {
+    font-size: 16px;
+    white-space: normal;
+  }
+}
+
+
+
+@keyframes jack-in-the-box {
+  0% {
+    opacity: 0;
+    transform: scale(0.1) rotate(30deg);
+    transform-origin: center bottom;
+  }
+
+  50% {
+    transform: rotate(-10deg);
+  }
+
+  70% {
+    transform: rotate(3deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
